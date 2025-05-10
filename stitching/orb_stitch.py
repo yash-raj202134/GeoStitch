@@ -99,6 +99,6 @@ plt.tight_layout()
 
 
 # Save the final stitched image
-output_path = 'stitched_result.png'
+output_path = 'stitching/stitched_result.png'
 cv2.imwrite(output_path, stitched)
 print(f"✅ Stitching completed! Saved as: {output_path}")
