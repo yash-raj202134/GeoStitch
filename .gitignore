@@ -175,3 +175,5 @@ cython_debug/
 
 # large data file (description: Google Earth Pro simulated Drone Footage) 
 /data
+
+/output_frames
