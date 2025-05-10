@@ -55,10 +55,10 @@ The final step is to visualize the georeferenced stitched image on an interactiv
 The project delivers the following outputs:
 
 - Raw stitched image in PNG format.
-![Stitched Image](stitching\stitched_result.png)
+![Stitched Image](stitching/stitched_result.png)
 - Georeferenced map overlay, properly aligned with geographic coordinates, saved as an interactive HTML file.
-![](visualization\georeferenced_map.png)
-![](visualization\overlay_clean_basemap.png)
+![](visualization/georeferenced_map.png)
+![](visualization/overlay_clean_basemap.png)
 - Account of any manual adjustments made to coordinate alignment during the geo-referencing process.
     1. **Ground Control Points (GCPs) Adjustment:**  
     Initially, the coordinates from Google Earth Pro were used for the four corners of the image. These were refined manually to ensure a more accurate match with the real-world locations.
