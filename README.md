@@ -54,7 +54,24 @@ The final step is to visualize the georeferenced stitched image on an interactiv
 
 The project delivers the following outputs:
 
-- The raw stitched image in PNG format.
-- A georeferenced map overlay, properly aligned with geographic coordinates.
-- The visualized map with the overlay on a clean basemap, saved as an interactive HTML file.
-- A detailed account of any manual adjustments made to coordinate alignment during the geo-referencing process.
+- Raw stitched image in PNG format.
+![Stitched Image](stitching\stitched_result.png)
+- Georeferenced map overlay, properly aligned with geographic coordinates, saved as an interactive HTML file.
+![](visualization\georeferenced_map.png)
+![](visualization\overlay_clean_basemap.png)
+- Account of any manual adjustments made to coordinate alignment during the geo-referencing process.
+    1. **Ground Control Points (GCPs) Adjustment:**  
+    Initially, the coordinates from Google Earth Pro were used for the four corners of the image. These were refined manually to ensure a more accurate match with the real-world locations.
+
+    2. **Transformation Corrections:**  
+    The transformation matrix was adjusted when the first geo-referencing attempt showed misalignments, refining the fit between the image and the map.
+
+    3. **Image Cropping and Alignment:**  
+    After stitching, residual black borders were cropped manually to ensure the final image fit perfectly with the map, removing any distortions.
+
+    4. **Reprojection Corrections:**  
+    In some cases, the initial projection didn't match WGS84 (EPSG:4326) perfectly, requiring manual adjustments or reprojection for proper alignment.
+
+    5. **Fine-Tuning GeoTIFF Matrix:**  
+    Adjustments were made to the transformation matrix parameters (scale, rotation, translation) to further refine the alignment of the image on the map.
+
