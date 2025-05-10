@@ -172,3 +172,6 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# large data file (description: Google Earth Pro simulated Drone Footage) 
+/data
