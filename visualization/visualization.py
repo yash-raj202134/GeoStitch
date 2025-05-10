@@ -5,7 +5,7 @@ from folium.raster_layers import ImageOverlay
 from rasterio.warp import transform_bounds
 
 # Path to your GeoTIFF
-geo_tiff_path = "georeferencing/stitched_georeferenced.tif"
+geo_tiff_path = "georeferencing/stitched_georeferenced_resampled.tif"
 
 # Load the image and get bounds
 with rasterio.open(geo_tiff_path) as src:
