@@ -1,0 +1,5 @@
+opencv-python
+rasterio
+numpy
+matplotlib
+folium
